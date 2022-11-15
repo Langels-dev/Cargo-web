@@ -94,7 +94,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
 
             <div class="site-logo">
-              <a href="index.html" class="text-black"><span class="text-primary">Cargo</a>
+              <a href="index.html" class="text-black"><img src="images/LOGO.png" alt="logo" class="img-fluid"></a>
             </div>
 
             <div class="col-12">
@@ -132,9 +132,9 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
         <!-- END .ftco-cover-1 -->
       </div>
 
-      <div class="site-section" id="about-section" style="padding-bottom: 1rem;">
+      <div class="site-section" id="about-section" style="padding-bottom: 0;">
         <div class="container">
-          <div class="row mb-5 justify-content-center">
+          <div class="row mb-5 justify-content-center" id="responsive">
             <div class="col-md-7 text-center">
               <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
                 <h2>About Us</h2>
@@ -152,9 +152,8 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
             </div>
 
             <div class="col-lg-5 mr-auto p-lg-5 mt-4 mt-lg-0 order-lg-1" data-aos="fade-right" data-aos-delay="">
-              <p style="line-height: 2.5;">
+              <p style="line-height: 2.5;" class="text-responsive">
                 An unmatched commitment to service, added to our  more than 20 years of experience, makes us the number one choice for all your international commerce needs.
-                
                 We´ll walk you trough the international trade process and provide you with the services you need, whether it is Ocean, Air or Rail freight for import or export loads; International Cargo Insurance; or Customs Clearance and compliance regulations with any Federal Agency to move your freight along to the final destination, we provide true integrated logistics so you can choose the level of services you need, at the best rates the market can offer.
               </p>
             </div>
@@ -222,7 +221,7 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
         <div class="container">
           <div class="row d-flex no-gutters align-items-stretch">
 
-            <div class="col-12 col-lg-6 block__73422 order-lg-2" style="background-image: url('images/cargo_sea_small.jpg');" data-aos="fade-left" data-aos-delay="">
+            <div class="col-12 col-lg-6 block__73422 order-lg-2" style="background-image: url('images/cargo_sea_small.jpg');" data-aos="zoom-in" data-aos-delay="">
             </div>
 
 
@@ -258,36 +257,36 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
         </div>
         <div class="row">
           <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="100">
-            <form action="#" method="post">
+            <form id="form-mail">
               <div class="form-group row">
                 <div class="col-md-6 mb-4 mb-lg-0">
-                  <input type="text" class="form-control" placeholder="First name">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="First name">
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control" placeholder="First name">
+                  <input type="text" name="srname" class="form-control" id="srname" placeholder="Second name">
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <input type="text" class="form-control" placeholder="Email address">
+                  <input type="text" name="correo" class="form-control" id="email" placeholder="Email address">
                 </div>
               </div>
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <textarea name="" id="" class="form-control" placeholder="Write your message." cols="30" rows="10"></textarea>
+                  <textarea name="msg" class="form-control" id="msg" placeholder="Write your message." cols="30" rows="10"></textarea>
                 </div>
               </div>
               <div class="form-group row">
                 <div class="col-md-6 mr-auto">
-                  <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
+                  <input type="submit" name="send" class="btn btn-block btn-primary text-white py-3 px-5" id="button" value="Send Message">
                 </div>
               </div>
             </form>
           </div>
           <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
-            <div class="bg-white p-3 p-md-5">
+            <div class="p-3 p-md-5">
               <h3 class="text-black mb-4">Contact Info</h3>
               <ul class="list-unstyled footer-link">
                 <li class="d-block mb-3">
@@ -351,6 +350,8 @@ RSS Feed: https://feeds.feedburner.com/Free-templateco
 
     </div>
 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/mails.js"></script>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
